@@ -1,0 +1,19 @@
+header {
+    width: 100%;
+    height: 80px;
+    background: white;
+    border-bottom: 2px solid gray;
+    padding: 20px;
+    position: relative;
+
+    .logo {
+        height: 40px;
+        position: relative;
+        float: left;
+    }
+
+    app-menu {
+        float: right;
+        margin-top: 10px;
+    }
+}

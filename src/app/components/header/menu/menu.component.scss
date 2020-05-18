@@ -1,0 +1,24 @@
+@import '../../../../assets/css/variables.scss';
+
+nav {   
+    ul {
+        li {
+            display: inline-block;
+            
+            a {
+                padding: 0 25px;
+                text-decoration: none;
+                font-family: $main-font;
+                color: $dark-gray;
+                font-size: 20px;
+                transition: all .2s ease;
+                border-bottom: 1px solid transparent;
+
+                &:hover {
+                    color: rgba(200, 50, 50, 1);
+                    border-bottom: 1px solid rgba(200, 50, 50, 1);
+                }
+            }
+        }
+    }
+}
