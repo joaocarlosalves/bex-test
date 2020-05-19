@@ -1,0 +1,31 @@
+<form [formGroup]="newCardForm">
+    <label>
+      Número do cartão
+      <input type="text" formControlName="cardNumber">
+    </label>
+
+    <label>
+      Nome (Igual ao cartão)
+      <input type="text" formControlName="cardName">
+    </label>
+  
+    <div class='col'>
+        <label>
+        Validade
+        <input type="text" formControlName="cardValid">
+        </label>
+    </div>
+
+    <div class='col'>
+        <label>
+        CVV (!)
+        <input type="text" formControlName="cardCVV">
+        </label>
+    </div>
+
+    <select class='row' type="text" formControlName="cardPayments">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+    </select>
+</form>

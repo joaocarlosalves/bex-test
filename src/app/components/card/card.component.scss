@@ -13,14 +13,16 @@
         @extend .not-mobile-container-flex;
 
         .card-header {
+            width: 100%;
+
             @media screen and (min-width: 1024px) {
                 width: 32%;
                 background: $main-color;
-                min-height: 500px;
+                min-height: 550px;
             }
 
             @media screen and (min-width: 1366px) {
-                height: 600px;
+                height: 650px;
             }
 
             .card-header-content {
@@ -156,8 +158,31 @@
         }
 
         .card-content-container {
-            width: 68%;
-            right: 0;
+            width: 100%;
+            background: #ffffff;
+            
+            @media screen and (min-width: 1024px) {
+                width: 68%;
+                padding: 40px 50px 40px 140px;
+                right: 0;
+            }
+        }
+
+        .btn-next {
+            border-radius: 8px;
+            border: none;
+            width: 250px;
+            height: 45px;
+            line-height: 45px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 17px;
+            margin-top: 20px;
+            background: $main-color;
+
+            @media screen and (max-width: 1024px) {
+                width: 100%;                
+            }
         }
     }
 
