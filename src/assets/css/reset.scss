@@ -34,3 +34,10 @@
   ul {
     list-style: none;
   }
+
+  input,
+  textarea,
+  select {
+    border-radius: 0!important;
+    outline: none;
+  }

@@ -16,4 +16,24 @@ header {
         float: right;
         margin-top: 10px;
     }
+
+    .btn-menu-mobile {
+        display: none;
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding: 10px 0 0 0;
+        height: 50px;
+
+        .logo {
+            height: 30px;
+            position: relative;
+            float: left;
+            margin-left: 10%;
+        }
+
+        .btn-menu-mobile {
+            display: block;
+        }
+    }
 }

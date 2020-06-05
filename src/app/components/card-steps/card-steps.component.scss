@@ -1,5 +1,64 @@
+@import '../../../assets/css/variables.scss';
+
 .card-steps-container {
     width: 84%;
-    margin: 0 8%;
-    border: 1px solid red;
+    margin: 0 8% 55px 8%;
+    float: left;
+
+    @media screen and (max-width: 1024px) {
+        display: none; 
+    }
+}
+
+.step {
+    .check-icon-container {
+        float: left;
+
+        .step-mark-number {
+            width: 25px;
+            height: 25px;
+            border: 2px solid $main-color;
+            color: $main-color;
+            font-size: 13px;
+            font-weight: bold;
+            border-radius: 100px;
+            text-align: center;
+            line-height: 20px;
+        }
+
+        .check-svg {
+            width: 25px;
+            height: 25px;
+            text-align: center;
+
+            svg {
+                border-radius: 100px;
+
+                path {
+                    fill: $main-color;
+                }
+            }
+        }
+    }
+
+    .txt-step {
+        float: left;
+        height: 25px;
+        color: $main-color;
+        font-size: 15px;
+        text-align: left;
+        line-height: 25px;
+        margin-left: 15px;
+    }
+
+    .step-arrow {
+        transform: rotate(180deg);
+        float: left; 
+        width: 17px;
+        margin: 6px 10px 0 10px;
+        
+        path {
+            fill: $main-color;
+        }
+    }
 }

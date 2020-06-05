@@ -1,31 +1,37 @@
 <form [formGroup]="newCardForm">
-    <label>
+    <label for="email" class="control-label">
       Número do cartão
-      <input type="text" formControlName="cardNumber">
+      <input type="text"  class='form-control' id='cardNumber' required formControlName="cardNumber">
     </label>
 
     <label>
       Nome (Igual ao cartão)
-      <input type="text" formControlName="cardName">
+      <input type="text" class='form-control' id="cardName" required formControlName="cardName">
     </label>
   
-    <div class='col'>
+    <div class='column form-group'>
         <label>
         Validade
-        <input type="text" formControlName="cardValid">
+        <input type="text" class='form-control' id="cardValid" required formControlName="cardValid">
         </label>
     </div>
 
-    <div class='col'>
+    <div class='column'>
         <label>
         CVV (!)
-        <input type="text" formControlName="cardCVV">
+        <input type="text" class='form-control' id="cardCVV" required formControlName="cardCVV">
         </label>
     </div>
 
-    <select class='row' type="text" formControlName="cardPayments">
+    <label>
+      <select class='full form-control' type="text" id="cardPayments" required formControlName="cardPayments">
         <option>1</option>
         <option>2</option>
         <option>3</option>
-    </select>
+      </select>
+    </label>
+
+    <div class='full'>
+      <button class='btn-next fr' (click)="submit()">CONTINUAR</button>
+    </div>
 </form>

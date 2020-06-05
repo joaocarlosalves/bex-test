@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardStepsComponent implements OnInit {
 
+  step1 = true;
+  step2 = false;
+  step3 = false;
+
   constructor() { }
 
   ngOnInit(): void {
